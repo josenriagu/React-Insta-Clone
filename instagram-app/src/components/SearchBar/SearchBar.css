@@ -7,14 +7,20 @@ input {
     font-size: .9rem;
     text-align: center;
     border-radius: .3rem;
-    border: .1rem solid gray;
+    border: .05rem solid #dbdbdb;
+    background-color: #fafafa;
 }
 input:focus {
     outline: none;
 }
+::placeholder {
+    color: #aaaaaa;
+}
 header {
     display: flex;
     padding: 1rem 0;
+    background-color: white;
+    border-bottom: .05rem solid #dbdbdb;
 }
 .header-nav {
     display:flex;
@@ -28,14 +34,21 @@ header {
     width: 20%;
 }
 .logo-image {
-    padding: .5rem;
+    display: flex;
+    align-items: center;
+    padding: .2rem;
+    padding-right: 1rem;
+    border-right: .05rem solid black;
 }
 .logo-text {
-    padding: .5rem;
+    display: flex;
+    align-items: center;
+    padding: .2rem;
+    padding-left: 1rem;
 }
 
 .search {
-    width: 25%;
+    width: 20%;
 }
 .header-icons {
     display: flex;
@@ -43,4 +56,8 @@ header {
     justify-content: space-between;
     font-size: 2rem;
     padding: 0 .5rem;
+}
+.icon {
+    display: flex;
+    align-items: center;
 }
