@@ -1,4 +1,5 @@
 import React from 'react';
+import Icons from './Icons';
 import './SearchBar.css';
 
 const SearchBar = props => {
@@ -16,17 +17,7 @@ const SearchBar = props => {
                 <div className="search">
                     <input type="Search" placeholder="Search" />
                 </div>
-                <div className="header-icons">
-                    <div className="icon">
-                        <img src="/img/icons/explore.png" alt="logo" />
-                    </div>
-                    <div className="icon">
-                        <img src="/img/icons/like.png" alt="logo" />
-                    </div>
-                    <div className="icon">
-                        <img src="/img/icons/user.png" alt="logo" />
-                    </div>
-                </div>
+                <Icons />
             </nav>
         </header>
     );
