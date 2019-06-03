@@ -50,7 +50,7 @@ header {
 .search {
     width: 20%;
 }
-.header-icons {
+.icon-holder {
     display: flex;
     width: 15%;
     justify-content: space-between;
