@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import uuid from 'uuid';
 import dummyData, { searchIcons, postIcons } from './dummy-data';
 import SearchBar from './components/SearchBar/SearchBar';
 import PostContainer from './components/PostContainer/PostContainer';
@@ -21,12 +22,28 @@ export default class App extends Component {
     super(props);
     this.state = {
       postData: postData,
-      newComment: "",
       searchString: ""
     }
   }
 
-
+  addComment = (postId, commentText) => {
+    let newComment = {
+      id: uuid(),
+      username: "random_user",
+      text: commentText
+    }
+    this.setState({
+      ...this.state, postData: this.state.postData.map(post => {
+        if (postId === post.id) {
+          return {
+            ...post, comments: post.comments.concat(newComment)
+          }
+        }
+        return post;
+      })
+    })
+    console.log(postId, commentText);
+  }
   savePosts = () => {
     localStorage.setItem("posts-saved", JSON.stringify(this.state.postData));
   };
@@ -52,6 +69,7 @@ export default class App extends Component {
             searchString={this.state.searchString}
             postData={this.state.postData}
             postIcons={postIcons}
+            addComment={this.addComment}
           />
           <ProfileSection />
         </main>
