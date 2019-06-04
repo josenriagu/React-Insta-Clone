@@ -1,16 +1,9 @@
 import React from 'react';
-import moment from 'moment';
 import Icons from '../SearchBar/Icons';
 import CommentSection from '../CommentSection/CommentSection';
-import AddComment from '../CommentSection/AddComment';
 import './PostContainer.css';
 
-const Post = props => {
-    const { id, username, likes, timestamp, comments,thumbnailUrl, imageUrl, postIcons } = props;
-    // tweaks with moment.js library
-    // let dt = moment(timestamp, ["MMMM Do YYYY, h:mm:ss a"]).format("HH:mm");
-    // let dtt =moment().startOf(timestamp).fromNow();
-    let new_timestamp = moment(timestamp, "MMMM Do YYYY, h:mm:ss a").fromNow();
+const Post = ({ id, username, likes, timestamp, comments, thumbnailUrl, imageUrl, postIcons, addComment }) => {
     return (
         <div id={id} className="post">
             <div className="post-head">
@@ -41,23 +34,13 @@ const Post = props => {
                     </div>
                     <p><strong>{likes} likes</strong></p>
                 </div>
-                {
-                    comments.map(comment => {
-                        return (
-                            <CommentSection
-                                key={comment.id}
-                                id={comment.id}
-                                username={comment.username}
-                                text={comment.text}
-                            />
-                        );
-                    })
-                }
-                <div className="post-time">{new_timestamp}</div>
             </div>
-            <div className="post-footer">
-                <AddComment />
-            </div>
+            <CommentSection
+                id={id}
+                comments={comments}
+                timestamp={timestamp}
+                addComment={addComment}
+            />
         </div>
     );
 }
