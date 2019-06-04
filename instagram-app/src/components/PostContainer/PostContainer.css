@@ -1,13 +1,12 @@
-img {
-  width: 100%;
-  object-fit: center;
-}
 .post-container {
-  width: 50%;
-  margin: 1.5rem auto;
+  width: 65%;
+}
+.profile-section {
+  width: calc(33% - 1rem);
+  padding: 0.5rem;
 }
 .post {
-  margin-bottom: 1.5rem;
+  margin-bottom: 4rem;
   border-radius: 0.3rem;
   border: 0.05rem solid #dbdbdb;
   background-color: white;
@@ -23,22 +22,21 @@ img {
   display: flex;
   align-items: center;
 }
-.left strong {
-  padding-left: 1rem;
-}
 .profile-thumbnail {
   border-radius: 50%;
-  /* padding-right: 1rem; */
   width: 3rem;
   height: 3rem;
   position: relative;
   overflow: hidden;
 }
+.small {
+  width: 2.3rem;
+  height: 2.3rem;
+  border: 0.1rem solid purple;
+}
 .profile-thumbnail img {
   min-width: 100%;
   min-height: 100%;
-  /* width: auto;
-  height: auto; */
   position: absolute;
   left: 50%;
   top: 50%;
@@ -47,16 +45,22 @@ img {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.profile-details {
+  padding-left: 1rem;
+  text-align: left;
+}
+.name {
+  font-size: 0.75rem;
+  color: #aaaaaa;
+}
 .post-image {
   width: 100%;
 }
 .post-body {
-  /* background-color: green; */
   padding: 0.5rem 0.8rem;
 }
 .post-interaction {
   width: 20%;
-  /* background-color: red; */
   text-align: left;
 }
 .post-interaction .icons {

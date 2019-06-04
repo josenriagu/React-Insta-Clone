@@ -1,19 +1,17 @@
 .comment {
-    text-align: left;
+  text-align: left;
 }
 .add-comment {
-    display: flex;
+  display: flex;
 }
 .add-comment input {
-    width:100%;
-    padding: .3rem 0rem;
-    font-size: .9rem;
-    text-align: left;
-    /* border-radius: .3rem; */
-    border: 0;
-    /* background-color: #fafafa; */
+  width: 100%;
+  padding: 0.3rem 0rem;
+  font-size: 0.9rem;
+  text-align: left;
+  border: 0;
 }
 .post-btn {
-    padding: 0rem .5rem;
-    color: #d5e9fc;
+  padding: 0rem 0.5rem;
+  color: #d5e9fc;
 }
