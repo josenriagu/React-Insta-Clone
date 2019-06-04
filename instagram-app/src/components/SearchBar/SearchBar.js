@@ -2,7 +2,7 @@ import React from 'react';
 import Icons from './Icons';
 import './SearchBar.css';
 
-const SearchBar = props => {
+const SearchBar = ({searchIcons}) => {
     return (
         <header className="search-bar">
             <nav className="header-nav">
@@ -15,9 +15,22 @@ const SearchBar = props => {
                     </div>
                 </div>
                 <div className="search">
-                    <input type="Search" placeholder="Search" />
+                    <input type="search" placeholder="Search" />
                 </div>
-                <Icons />
+                <div className="icon-holder">
+                    <div className="icons">
+                        {
+                            searchIcons.map(icon => {
+                                return (
+                                    <Icons
+                                    key={icon.id}
+                                    src={icon.src}
+                                    />
+                                );
+                            })
+                        }
+                    </div>
+                </div>
             </nav>
         </header>
     );
