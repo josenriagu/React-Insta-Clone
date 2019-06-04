@@ -29,13 +29,13 @@ header {
     align-items: center;
     padding: .2rem;
     padding-right: 1rem;
-    border-right: .05rem solid black;
 }
 .logo-text {
     display: flex;
     align-items: center;
     padding: .2rem;
     padding-left: 1rem;
+    border-left: .05rem solid black;
 }
 
 .search {
