@@ -2,7 +2,7 @@ import React from 'react';
 import Icons from './Icons';
 import './SearchBar.css';
 
-const SearchBar = ({searchIcons}) => {
+const SearchBar = ({searchIcons, value, changeHandler}) => {
     return (
         <header className="search-bar">
             <nav className="header-nav">
@@ -15,7 +15,12 @@ const SearchBar = ({searchIcons}) => {
                     </div>
                 </div>
                 <div className="search">
-                    <input type="search" placeholder="Search" />
+                    <input
+                        type="search"
+                        placeholder="Search"
+                        value={value}
+                        onChange={changeHandler}
+                    />
                 </div>
                 <div className="icon-holder">
                     <div className="icons">
