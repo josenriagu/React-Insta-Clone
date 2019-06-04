@@ -2,11 +2,11 @@ import React from 'react';
 import Post from './Post';
 import './PostContainer.css';
 
-const PostContainer = ({ dummyData, postIcons }) => {
+const PostContainer = ({ postData, postIcons, searchString }) => {
     return (
         <article className="post-container">
             {
-                dummyData.map(user => {
+                postData.filter(user => user.username.includes(searchString)).map(user => {
                     return (
                         <Post
                             key={user.id}
