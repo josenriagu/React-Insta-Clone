@@ -4,6 +4,7 @@ import searchIcons from './searchIcons';
 import postIcons from './postIcons';
 import SearchBar from './components/SearchBar/SearchBar';
 import PostContainer from './components/PostContainer/PostContainer';
+import ProfileSection from './components/ProfileSection/ProfileSection';
 import './App.css';
 
 export default class App extends Component {
@@ -13,10 +14,14 @@ export default class App extends Component {
         <SearchBar
           searchIcons={searchIcons}
         />
-        <PostContainer
+        <main className="main">
+          <PostContainer
           dummyData={dummyData}
           postIcons={postIcons}
-        />
+          />
+          <ProfileSection />
+        </main>
+        
       </div>
     );
   }
