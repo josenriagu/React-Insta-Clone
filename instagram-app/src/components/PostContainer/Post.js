@@ -15,12 +15,12 @@ const Post = props => {
         <div id={id} className="post">
             <div className="post-head">
                 <div className="left">
-                    <div className="profile-thumbnail">
+                    <div className="profile-thumbnail small">
                         <img src={thumbnailUrl} alt="profile thumbnail" />
                     </div>
-                    <div className="username"><strong>{username}</strong></div>
+                    <div className="profile-details username"><strong>{username}</strong></div>
                 </div>
-                <div className="right"><strong>. . .</strong></div>
+                <div className="right"><strong>∙ ∙ ∙</strong></div>
             </div>
             <div className="post-image">
                 <img src={imageUrl} alt="post" />
