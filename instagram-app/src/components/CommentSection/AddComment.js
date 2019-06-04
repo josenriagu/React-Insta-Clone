@@ -1,12 +1,17 @@
 import React from 'react';
 import './CommentSection.css';
 
-const AddComment = props => {
+const AddComment = ({ changeHandler, commentText, submitHandler }) => {
     return (
-        <div className="add-comment">
-            <input type="text" placeholder="Add a comment..." />
-            <div className="post-btn">Post</div>
-        </div>
+        <form className="add-comment" onSubmit={(event) => submitHandler(event)}>
+            <input
+                type="text"
+                placeholder="Add a comment..."
+                value={commentText}
+                onChange={(event) => changeHandler(event)}
+            />
+            {/* <div className="post-btn">Post</div> */}
+        </form>
     );
 }
 
