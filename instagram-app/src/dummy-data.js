@@ -2,8 +2,8 @@ const dummyData = [
     {
         id: "a",
         username: "philzcoffee",
-        thumbnailUrl: 'https://scontent-los2-1.cdninstagram.com/vp/21494a8bd9d45997d391636b897c5fdb/5D8ECBFF/t51.2885-19/s150x150/13725503_670304556458304_1067701019_a.jpg?_nc_ht=scontent-los2-1.cdninstagram.com',
-        imageUrl: 'https://scontent-los2-1.cdninstagram.com/vp/1b0d29d3697b0167375cabc33495702e/5D8B7F0C/t51.2885-15/e35/s1080x1080/60713976_115864186320790_4414933686519823414_n.jpg?_nc_ht=scontent-los2-1.cdninstagram.com',
+        thumbnailUrl: "https://tk-assets.lambdaschool.com/ecd33d34-c124-4b75-92d2-e5c52c171ed8_11201517_887808411287357_1307163552_a.jpg",
+        imageUrl: "https://tk-assets.lambdaschool.com/69cf901b-f96d-466e-a745-ff2a01effac9_philz-image.jpg",
         likes: 400,
         timestamp: "July 17th 2017, 12:42:40 pm",
         comments: [
@@ -27,8 +27,8 @@ const dummyData = [
     {
         id: "b",
         username: "twitch",
-        thumbnailUrl: 'https://scontent-los2-1.cdninstagram.com/vp/f94efa45e4b8d012c47f02477393ffc4/5D7D134F/t51.2885-19/s150x150/52482988_354822802031636_2894708005025087488_n.jpg?_nc_ht=scontent-los2-1.cdninstagram.com',
-        imageUrl: 'https://scontent-los2-1.cdninstagram.com/vp/01c92d04fb26187a75894e95093b15f1/5D90D4DA/t51.2885-15/e35/61574206_2241801252570167_107485506187991327_n.jpg?_nc_ht=scontent-los2-1.cdninstagram.com',
+        thumbnailUrl: "https://tk-assets.lambdaschool.com/ce601fdf-7cb0-4098-83d3-1a1584a72513_30841289_342445456281079_112845064497004544_n.jpg",
+        imageUrl: "https://tk-assets.lambdaschool.com/89d13918-b7a2-4b40-9658-f376ea3f6b59_37131538_213683546146400_1083714364399157248_n.jpg",
         likes: 4307,
         timestamp: "July 15th 2017, 03:12:09 pm",
         comments: [
@@ -62,8 +62,8 @@ const dummyData = [
     {
         id: "c",
         username: "playhearthstone",
-        thumbnailUrl: 'https://scontent-los2-1.cdninstagram.com/vp/680898c940ace9d29fbbd5b4b0cfbdf1/5D8D0624/t51.2885-19/s150x150/44833017_320060311914950_4054016280619909120_n.jpg?_nc_ht=scontent-los2-1.cdninstagram.com',
-        imageUrl: 'https://scontent-los2-1.cdninstagram.com/vp/ed066a87644e61a61d70419794169759/5D9D9439/t51.2885-15/e35/61837372_178346726494785_8980901074438146739_n.jpg?_nc_ht=scontent-los2-1.cdninstagram.com',
+        thumbnailUrl: "https://tk-assets.lambdaschool.com/c432f179-8bd7-4758-959d-d88a21f96bca_37105899_432228420518610_5035444036064772096_n.jpg",
+        imageUrl: "https://tk-assets.lambdaschool.com/43bf01f9-319c-469d-8cf5-0120fe1007f1_yosemite.jpg",
         likes: 5306,
         timestamp: "July 14th 2017, 10:04:08 am",
         comments: [
