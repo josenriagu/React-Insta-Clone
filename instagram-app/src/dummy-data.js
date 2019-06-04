@@ -1,3 +1,9 @@
+import uuid from 'uuid';
+
+export const searchIcons = [{ id: uuid(), src: "/img/icons/explore.png" }, { id: uuid(), src: "/img/icons/like.png" }, { id: uuid(), src: "/img/icons/user.png" }];
+
+export const postIcons = [{ id: uuid(), src: "/img/icons/like.png" }, { id: uuid(), src: "/img/icons/chat.png" }, { id: uuid(), src: "/img/icons/share.png" }];
+
 const dummyData = [
     {
         id: "a",
