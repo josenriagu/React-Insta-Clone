@@ -2,8 +2,8 @@ const dummyData = [
     {
         id: "a",
         username: "philzcoffee",
-        thumbnailUrl: 'https://instagram.fbna1-1.fna.fbcdn.net/vp/31c45306e6ca815b8c59940aed10cedc/5B2D3C88/t51.2885-19/11201517_887808411287357_1307163552_a.jpg',
-        imageUrl: 'https://instagram.fbna1-1.fna.fbcdn.net/vp/557a29d3526bc7f813c2a784d82de7d3/5B4E3E05/t51.2885-15/e35/26065916_2007800899433580_5879937492399947776_n.jpg',
+        thumbnailUrl: 'https://scontent-los2-1.cdninstagram.com/vp/21494a8bd9d45997d391636b897c5fdb/5D8ECBFF/t51.2885-19/s150x150/13725503_670304556458304_1067701019_a.jpg?_nc_ht=scontent-los2-1.cdninstagram.com',
+        imageUrl: 'https://scontent-los2-1.cdninstagram.com/vp/1b0d29d3697b0167375cabc33495702e/5D8B7F0C/t51.2885-15/e35/s1080x1080/60713976_115864186320790_4414933686519823414_n.jpg?_nc_ht=scontent-los2-1.cdninstagram.com',
         likes: 400,
         timestamp: "July 17th 2017, 12:42:40 pm",
         comments: [
@@ -27,8 +27,8 @@ const dummyData = [
     {
         id: "b",
         username: "twitch",
-        thumbnailUrl: 'https://instagram.fbna1-1.fna.fbcdn.net/vp/81f608ddb76a034e06c0d1669e7e2b48/5B35C840/t51.2885-19/10684037_1512272482349821_444823433_a.jpg',
-        imageUrl: 'https://instagram.fbna1-1.fna.fbcdn.net/vp/830c01ad7ceb325547fd1d4d1a1e6897/5B465520/t51.2885-15/e35/25006313_192089151354555_3374696275667582976_n.jpg',
+        thumbnailUrl: 'https://scontent-los2-1.cdninstagram.com/vp/f94efa45e4b8d012c47f02477393ffc4/5D7D134F/t51.2885-19/s150x150/52482988_354822802031636_2894708005025087488_n.jpg?_nc_ht=scontent-los2-1.cdninstagram.com',
+        imageUrl: 'https://scontent-los2-1.cdninstagram.com/vp/01c92d04fb26187a75894e95093b15f1/5D90D4DA/t51.2885-15/e35/61574206_2241801252570167_107485506187991327_n.jpg?_nc_ht=scontent-los2-1.cdninstagram.com',
         likes: 4307,
         timestamp: "July 15th 2017, 03:12:09 pm",
         comments: [
@@ -62,8 +62,8 @@ const dummyData = [
     {
         id: "c",
         username: "playhearthstone",
-        thumbnailUrl: 'https://instagram.fbna1-1.fna.fbcdn.net/vp/51d5b37438ae3a47df37b7ed3fda141f/5B4ABAA7/t51.2885-19/s150x150/13398400_140638743023210_310840336_a.jpg',
-        imageUrl: 'https://instagram.fbna1-1.fna.fbcdn.net/vp/22618be7ee2a2b676d13e8d70d7d5e08/5B40BF6B/t51.2885-15/e35/25038917_1978298569058775_6081161469041311744_n.jpg',
+        thumbnailUrl: 'https://scontent-los2-1.cdninstagram.com/vp/680898c940ace9d29fbbd5b4b0cfbdf1/5D8D0624/t51.2885-19/s150x150/44833017_320060311914950_4054016280619909120_n.jpg?_nc_ht=scontent-los2-1.cdninstagram.com',
+        imageUrl: 'https://scontent-los2-1.cdninstagram.com/vp/ed066a87644e61a61d70419794169759/5D9D9439/t51.2885-15/e35/61837372_178346726494785_8980901074438146739_n.jpg?_nc_ht=scontent-los2-1.cdninstagram.com',
         likes: 5306,
         timestamp: "July 14th 2017, 10:04:08 am",
         comments: [
