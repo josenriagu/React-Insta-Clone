@@ -1,15 +1,6 @@
 img {
     width: 100%;
 }
-input {
-    width:100%;
-    padding: .3rem;
-    font-size: .9rem;
-    text-align: center;
-    border-radius: .3rem;
-    border: .05rem solid #dbdbdb;
-    background-color: #fafafa;
-}
 input:focus {
     outline: none;
 }
@@ -50,12 +41,23 @@ header {
 .search {
     width: 20%;
 }
+.search input {
+    width:100%;
+    padding: .3rem;
+    font-size: .9rem;
+    text-align: center;
+    border-radius: .3rem;
+    border: .05rem solid #dbdbdb;
+    background-color: #fafafa;
+}
 .icon-holder {
-    display: flex;
     width: 15%;
+    padding: 0 .5rem;
+}
+.icons {
+    display: flex;
     justify-content: space-between;
     font-size: 2rem;
-    padding: 0 .5rem;
 }
 .icon {
     display: flex;

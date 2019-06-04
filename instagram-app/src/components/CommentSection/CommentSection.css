@@ -1,0 +1,19 @@
+.comment {
+    text-align: left;
+}
+.add-comment {
+    display: flex;
+}
+.add-comment input {
+    width:100%;
+    padding: .3rem 0rem;
+    font-size: .9rem;
+    text-align: left;
+    /* border-radius: .3rem; */
+    border: 0;
+    /* background-color: #fafafa; */
+}
+.post-btn {
+    padding: 0rem .5rem;
+    color: #d5e9fc;
+}
