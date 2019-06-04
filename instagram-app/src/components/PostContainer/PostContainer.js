@@ -1,22 +1,27 @@
 import React from 'react';
-import Icons from '../SearchBar/Icons';
+import Post from './Post';
 import './PostContainer.css';
 
-const PostContainer = props => {
+const PostContainer = ({ dummyData, postIcons }) => {
     return (
         <article className="post-container">
-            <div className="post">
-                <div className="post-head">
-                    <div className="profile-image">
-                        <img src="#" alt="mini profile" />
-                    </div>
-                    <div className="username">Philzcofee</div>
-                </div>
-                <div className="post-image">
-                    <img src="#" alt="post" />
-                </div>
-                <Icons />
-            </div>
+            {
+                dummyData.map(user => {
+                    return (
+                        <Post
+                            key={user.id}
+                            id={user.id}
+                            username={user.username}
+                            thumbnailUrl={user.thumbnailUrl}
+                            imageUrl={user.imageUrl}
+                            likes={user.likes}
+                            timestamp={user.timestamp}
+                            comments={user.comments}
+                            postIcons={postIcons}
+                        />
+                    )
+                })
+            }
         </article>
     );
 }
