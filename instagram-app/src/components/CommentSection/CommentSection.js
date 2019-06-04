@@ -5,7 +5,7 @@ const CommentSection = ({ id, username, text }) => {
     
     return (
         <div id={id} className="comment">
-            <p><strong>{username} </strong>{text} <span>more</span></p>
+            <p><strong>{username} </strong>{text}</p>
         </div>
         
     );
