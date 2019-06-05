@@ -6,7 +6,7 @@ import PostContainer from './components/PostContainer/PostContainer';
 import ProfileSection from './components/ProfileSection/ProfileSection';
 import './App.css';
 
-// Variable assignments
+// assign variables
 let postData = dummyData;
 const localStorage = window.localStorage;
 
@@ -42,8 +42,8 @@ export default class App extends Component {
         return post;
       })
     })
-    console.log(postId, commentText);
   }
+  
   savePosts = () => {
     localStorage.setItem("posts-saved", JSON.stringify(this.state.postData));
   };

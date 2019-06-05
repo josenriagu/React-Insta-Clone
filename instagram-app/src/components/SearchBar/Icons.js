@@ -4,7 +4,7 @@ import './SearchBar.css';
 const Icons = ({src}) => {
     return (
         <div className="icon">
-            <img src={src} alt="logo" />
+            <img src={src} alt="icon" />
         </div>
     );
 }
