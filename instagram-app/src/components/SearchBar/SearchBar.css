@@ -1,4 +1,4 @@
-header {
+.search-bar {
   display: flex;
   padding: 1rem 0;
   background-color: white;
@@ -28,7 +28,6 @@ header {
   padding-left: 1rem;
   border-left: 0.05rem solid black;
 }
-
 .search {
   width: 20%;
 }
@@ -48,9 +47,9 @@ header {
 .icons {
   display: flex;
   justify-content: space-between;
-  font-size: 2rem;
 }
 .icon {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }

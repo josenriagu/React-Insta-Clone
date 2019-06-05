@@ -28,6 +28,7 @@
   height: 3rem;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .small {
   width: 2.3rem;
@@ -48,6 +49,7 @@
 .profile-details {
   padding-left: 1rem;
   text-align: left;
+  cursor: pointer;
 }
 .name {
   font-size: 0.75rem;
@@ -58,6 +60,7 @@
 }
 .post-body {
   padding: 0.5rem 0.8rem;
+  padding-bottom: 0rem;
 }
 .post-interaction {
   width: 20%;
@@ -65,14 +68,4 @@
 }
 .post-interaction .icons {
   width: 80%;
-}
-.post-time {
-  text-align: left;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  color: #aaaaaa;
-}
-.post-footer {
-  padding: 1rem 0.8rem;
-  border-top: 0.05rem solid #dbdbdb;
 }

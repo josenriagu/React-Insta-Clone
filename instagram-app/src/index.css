@@ -7,27 +7,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
   color: #343434;
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 img {
   width: 100%;
   /* object-fit: center; */
 }
-
 input:focus {
   outline: none;
 }
-
 ::placeholder {
   color: #aaaaaa;
 }
-
 p {
-  margin: 0.5rem 0;
+  margin: 0.35rem 0;
 }

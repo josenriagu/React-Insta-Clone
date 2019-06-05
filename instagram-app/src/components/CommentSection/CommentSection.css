@@ -1,5 +1,18 @@
 .comment {
   text-align: left;
+  padding: 0 0.8rem;
+}
+.post-time {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #aaaaaa;
+  padding: 0 0.8rem;
+  margin-bottom: 0.35rem;
+}
+.post-footer {
+  padding: 1rem 0.8rem;
+  border-top: 0.05rem solid #dbdbdb;
 }
 .add-comment {
   display: flex;
@@ -14,4 +27,5 @@
 .post-btn {
   padding: 0rem 0.5rem;
   color: #d5e9fc;
+  cursor: pointer;
 }
