@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import uuid from 'uuid';
 import dummyData, { searchIcons, postIcons } from './dummy-data';
-import SearchBar from './components/SearchBar/SearchBar';
-import PostContainer from './components/PostContainer/PostContainer';
-import ProfileSection from './components/ProfileSection/ProfileSection';
+import withAuthenticate from './components/authentication/withAuthenticate';
+import PostsPage from './components/PostContainer/PostsPage'
 import './App.css';
+
+const ComponentFromWithAuthenticate = withAuthenticate(PostsPage);
 
 export default class App extends Component {
   constructor(props) {
@@ -66,21 +67,16 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <SearchBar
+        <ComponentFromWithAuthenticate
           value={this.state.searchString}
           changeHandler={this.searchPosts}
           searchIcons={searchIcons}
-        />
-        <main className="main">
-          <PostContainer
-            searchString={this.state.searchString}
-            postData={this.state.postData}
-            postIcons={postIcons}
-            addComment={this.addComment}
-            addLike={this.addLike}
-        />
-          <ProfileSection />
-        </main>
+          searchString={this.state.searchString}
+          postData={this.state.postData}
+          postIcons={postIcons}
+          addComment={this.addComment}
+          addLike={this.addLike}
+          />
       </div>
     );
   }
