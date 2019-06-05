@@ -6,32 +6,22 @@ import PostContainer from './components/PostContainer/PostContainer';
 import ProfileSection from './components/ProfileSection/ProfileSection';
 import './App.css';
 
-// assign variables
-let postData = dummyData;
-const localStorage = window.localStorage;
-
-if (localStorage.getItem("posts-saved")) {
-  // initialize saving to local storage
-  postData = JSON.parse(localStorage.getItem("posts-saved"));
-} else {
-  localStorage.setItem("posts-saved", JSON.stringify(postData));
-}
-
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      postData: postData,
+      postData: [],
       searchString: ""
     }
   }
 
   componentDidMount() {
-    console.log("Component has mounted");
+    const posts = JSON.parse(localStorage.getItem("posts-saved"));
+    this.setState({ ...this.state, postData: posts || dummyData });
   }
 
-  addLike = (postId) => {
-    this.setState({
+  addLike = async (postId) => {
+    await this.setState({
       ...this.state, postData: this.state.postData.map(post => {
         if (postId === post.id) {
           return {
@@ -41,15 +31,16 @@ export default class App extends Component {
         return post;
       })
     })
+    await this.savePosts();
   }
 
-  addComment = (postId, commentText) => {
+  addComment = async (postId, commentText) => {
     let newComment = {
       id: uuid(),
       username: "thedrflynn",
       text: commentText
     }
-    this.setState({
+    await this.setState({
       ...this.state, postData: this.state.postData.map(post => {
         if (postId === post.id) {
           return {
@@ -59,6 +50,7 @@ export default class App extends Component {
         return post;
       })
     })
+    await this.savePosts();
   }
   
   savePosts = () => {
@@ -72,8 +64,6 @@ export default class App extends Component {
   };
 
   render() {
-    // Call save post method on render to save current state
-    this.savePosts();
     return (
       <div className="App">
         <SearchBar
