@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import uuid from 'uuid';
 import dummyData, { searchIcons, postIcons } from './dummy-data';
 import withAuthenticate from './components/authentication/withAuthenticate';
-import PostsPage from './components/PostContainer/PostsPage'
+import PostsPage from './components/PostContainer/PostsPage';
+import Login from './components/Login/Login';
 import './App.css';
 
-const ComponentFromWithAuthenticate = withAuthenticate(PostsPage);
+const ComponentFromWithAuthenticate = withAuthenticate(PostsPage)(Login);
 
 export default class App extends Component {
   constructor(props) {
@@ -38,7 +39,7 @@ export default class App extends Component {
   addComment = async (postId, commentText) => {
     let newComment = {
       id: uuid(),
-      username: "thedrflynn",
+      username: JSON.parse(localStorage.getItem("username")),
       text: commentText
     }
     await this.setState({
