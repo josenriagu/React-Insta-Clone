@@ -32,6 +32,7 @@ export default class Post extends Component {
                                         <Icons
                                             key={icon.id}
                                             id={id}
+                                            name={icon.name}
                                             src={icon.src}
                                             updateLike={this.updateLike}
                                         />
