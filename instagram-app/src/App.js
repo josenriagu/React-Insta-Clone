@@ -29,7 +29,7 @@ export default class App extends Component {
   addComment = (postId, commentText) => {
     let newComment = {
       id: uuid(),
-      username: "random_user",
+      username: "thedrflynn",
       text: commentText
     }
     this.setState({
@@ -73,7 +73,6 @@ export default class App extends Component {
           />
           <ProfileSection />
         </main>
-
       </div>
     );
   }
