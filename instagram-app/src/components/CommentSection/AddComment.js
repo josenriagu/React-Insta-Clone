@@ -1,7 +1,7 @@
 import React from 'react';
 import './CommentSection.css';
 
-const AddComment = ({ changeHandler, commentText, submitHandler }) => {
+const AddComment = ({ changeHandler, submitHandler, commentText }) => {
     return (
         <form className="add-comment" onSubmit={(event) => submitHandler(event)}>
             <input
@@ -10,7 +10,7 @@ const AddComment = ({ changeHandler, commentText, submitHandler }) => {
                 value={commentText}
                 onChange={(event) => changeHandler(event)}
             />
-            {/* <div className="post-btn">Post</div> */}
+            <div className="post-btn" onClick={(event) => submitHandler(event)} >Post</div>
         </form>
     );
 }
