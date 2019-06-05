@@ -1,8 +1,8 @@
 import uuid from 'uuid';
 
-export const searchIcons = [{ id: uuid(), src: "/img/icons/explore.png" }, { id: uuid(), src: "/img/icons/like.png" }, { id: uuid(), src: "/img/icons/user.png" }];
+export const searchIcons = [{ id: uuid(), name: "explore", src: "/img/icons/explore.png" }, { id: uuid(), name: "likepage", src: "/img/icons/like.png" }, { id: uuid(), name: "like", src: "/img/icons/user.png" }];
 
-export const postIcons = [{ id: uuid(), src: "/img/icons/like.png" }, { id: uuid(), src: "/img/icons/chat.png" }, { id: uuid(), src: "/img/icons/share.png" }];
+export const postIcons = [{ id: uuid(), name: "like", src: "/img/icons/like.png" }, { id: uuid(), name: "chat", src: "/img/icons/chat.png" }, { id: uuid(), name: "share", src: "/img/icons/share.png" }];
 
 const dummyData = [
     {
