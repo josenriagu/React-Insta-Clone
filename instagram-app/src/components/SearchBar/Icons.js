@@ -1,9 +1,9 @@
 import React from 'react';
 import './SearchBar.css';
 
-const Icons = ({src}) => {
+const Icons = ({ src, updateLike}) => {
     return (
-        <div className="icon">
+        <div onClick={(event) => updateLike(event)} className="icon">
             <img src={src} alt="icon" />
         </div>
     );
