@@ -15,7 +15,6 @@ export default class CommentSection extends Component {
 
     changeHandler = event => {
         this.setState({ ...this.state, commentText: event.target.value });
-        console.log("sfgsg")
     }
 
     submitHandler = event => {
@@ -25,17 +24,19 @@ export default class CommentSection extends Component {
     }
 
     render() {
-        const { id, timestamp, comments } = this.props;
+        const { id, timestamp } = this.props;
         // tweaks with moment.js library
         // let dt = moment(timestamp, ["MMMM Do YYYY, h:mm:ss a"]).format("HH:mm");
         // let dtt =moment().startOf(timestamp).fromNow();
         let new_timestamp = moment(timestamp, "MMMM Do YYYY, h:mm:ss a").fromNow();
         return (
             <div id={id} className="comment-section">
+                {/* map comments from state */}
                 {
-                    comments.map(comment => {
+                    this.state.comments.map(comment => {
                         return (
                             <Comment
+                                key={comment.id}
                                 id={comment.id}
                                 username={comment.username}
                                 text={comment.text}
