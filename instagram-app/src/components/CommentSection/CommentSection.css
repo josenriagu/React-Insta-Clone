@@ -1,6 +1,17 @@
 .comment {
+  display: flex;
+  justify-content: space-between;
   text-align: left;
   padding: 0 0.8rem;
+}
+.comment button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0rem;
+  color: rgba(255, 0, 0, .3);
+}
+.comment button:hover {
+  color: rgba(255, 0, 0, 1);
 }
 .post-time {
   text-align: left;

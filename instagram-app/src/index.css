@@ -20,7 +20,8 @@ img {
   width: 100%;
   /* object-fit: center; */
 }
-input:focus {
+input:focus,
+button:focus {
   outline: none;
 }
 ::placeholder {

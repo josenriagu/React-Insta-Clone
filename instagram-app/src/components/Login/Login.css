@@ -1,16 +1,6 @@
 img {
   width: 100%;
 }
-button {
-  width: 100%;
-  padding: 0.5rem 0;
-  border: 0rem;
-  border-radius: 0.2rem;
-  font-weight: 600;
-  color: white;
-  background-color: #76abdf;
-  cursor: pointer;
-}
 .login {
   width: 24%;
   display: flex;
@@ -28,6 +18,16 @@ button {
 .form-login {
   margin: 0.5rem 0rem;
   justify-content: flex-end;
+}
+.form-login button {
+  width: 100%;
+  padding: 0.5rem 0;
+  border: 0rem;
+  border-radius: 0.2rem;
+  font-weight: 600;
+  color: white;
+  background-color: #76abdf;
+  cursor: pointer;
 }
 .field {
   width: 100%;
