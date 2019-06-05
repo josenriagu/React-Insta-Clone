@@ -8,7 +8,7 @@ export default class Post extends Component {
         this.props.addLike(this.props.id)
     }
     render() {
-        const { id, username, likes, timestamp, comments, thumbnailUrl, imageUrl, postIcons, addComment } = this.props
+        const { id, username, likes, timestamp, comments, thumbnailUrl, imageUrl, postIcons, addComment, deleteComment } = this.props
         return (
             <div id={id} className="post">
                 <div className="post-head">
@@ -48,6 +48,7 @@ export default class Post extends Component {
                     comments={comments}
                     timestamp={timestamp}
                     addComment={addComment}
+                    deleteComment={deleteComment}
                 />
             </div>
         );

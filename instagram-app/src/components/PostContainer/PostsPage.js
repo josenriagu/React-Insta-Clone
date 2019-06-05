@@ -3,7 +3,7 @@ import SearchBar from '../SearchBar/SearchBar';
 import PostContainer from './PostContainer';
 import ProfileSection from '../ProfileSection/ProfileSection';
 
-const PostsPage = ({value, changeHandler, searchIcons, searchString, postData, postIcons, addComment, addLike }) => {
+const PostsPage = ({value, changeHandler, searchIcons, searchString, postData, postIcons, addComment, addLike, deleteComment }) => {
     return (
         <div className="posts-page">
             <SearchBar
@@ -18,6 +18,7 @@ const PostsPage = ({value, changeHandler, searchIcons, searchString, postData, p
                     postIcons={postIcons}
                     addComment={addComment}
                     addLike={addLike}
+                    deleteComment={deleteComment}
                 />
                 <ProfileSection />
             </main> 
