@@ -2,7 +2,7 @@ import React from 'react';
 import Post from './Post';
 import './PostContainer.css';
 
-const PostContainer = ({ searchString, postData, postIcons, addComment }) => {
+const PostContainer = ({ searchString, postData, postIcons, addComment, addLike }) => {
     return (
         <article className="post-container">
             {
@@ -19,6 +19,7 @@ const PostContainer = ({ searchString, postData, postIcons, addComment }) => {
                             comments={user.comments}
                             postIcons={postIcons}
                             addComment={addComment}
+                            addLike={addLike}
                         />
                     )
                 })

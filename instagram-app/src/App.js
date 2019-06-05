@@ -30,6 +30,19 @@ export default class App extends Component {
     console.log("Component has mounted");
   }
 
+  addLike = (postId) => {
+    this.setState({
+      ...this.state, postData: this.state.postData.map(post => {
+        if (postId === post.id) {
+          return {
+            ...post, likes: post.likes + 1
+          }
+        }
+        return post;
+      })
+    })
+  }
+
   addComment = (postId, commentText) => {
     let newComment = {
       id: uuid(),
@@ -74,7 +87,8 @@ export default class App extends Component {
             postData={this.state.postData}
             postIcons={postIcons}
             addComment={this.addComment}
-          />
+            addLike={this.addLike}
+        />
           <ProfileSection />
         </main>
       </div>
