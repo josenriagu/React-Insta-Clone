@@ -26,6 +26,10 @@ export default class App extends Component {
     }
   }
 
+  componentDidMount() {
+    console.log("Component has mounted");
+  }
+
   addComment = (postId, commentText) => {
     let newComment = {
       id: uuid(),
