@@ -54,7 +54,23 @@ export default class App extends Component {
     })
     await this.savePosts();
   }
-  
+
+  deleteComment = async (postId, commentId) => {
+    const parentPost = this.state.postData.filter(post => post.id === postId)
+    const filteredComments = parentPost[0].comments.filter(comment => comment.id !== commentId)
+    await this.setState({
+      ...this.state, postData: this.state.postData.map(post => {
+        if (postId === post.id) {
+          return {
+            ...post, comments: filteredComments
+          }
+        }
+        return post;
+      })
+    });
+    await this.savePosts();
+  }
+
   savePosts = () => {
     localStorage.setItem("posts-saved", JSON.stringify(this.state.postData));
   };
@@ -77,7 +93,8 @@ export default class App extends Component {
           postIcons={postIcons}
           addComment={this.addComment}
           addLike={this.addLike}
-          />
+          deleteComment={this.deleteComment}
+        />
       </div>
     );
   }
