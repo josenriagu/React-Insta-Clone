@@ -24,7 +24,7 @@ export default class CommentSection extends Component {
     }
 
     render() {
-        const { id, timestamp, comments } = this.props;
+        const { id, timestamp, comments, deleteComment } = this.props;
         // tweaks with moment.js library
         // let dt = moment(timestamp, ["MMMM Do YYYY, h:mm:ss a"]).format("HH:mm");
         // let dtt =moment().startOf(timestamp).fromNow();
@@ -37,8 +37,10 @@ export default class CommentSection extends Component {
                             <Comment
                                 key={comment.id}
                                 id={comment.id}
+                                postId={id}
                                 username={comment.username}
                                 text={comment.text}
+                                deleteComment={deleteComment}
                             />
                         );
                     })
