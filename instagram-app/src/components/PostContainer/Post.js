@@ -8,7 +8,7 @@ export default class Post extends Component {
         this.props.addLike(this.props.id)
     }
     render() {
-        const { id, username, likes, timestamp, comments, thumbnailUrl, imageUrl, postIcons, addComment, deleteComment } = this.props
+        const { id, username, likes, likeStatus, timestamp, comments, thumbnailUrl, imageUrl, postIcons, addComment, deleteComment } = this.props
         return (
             <div id={id} className="post">
                 <div className="post-head">
@@ -32,6 +32,7 @@ export default class Post extends Component {
                                         <Icons
                                             key={icon.id}
                                             id={id}
+                                            likeStatus={likeStatus}
                                             name={icon.name}
                                             src={icon.src}
                                             updateLike={this.updateLike}

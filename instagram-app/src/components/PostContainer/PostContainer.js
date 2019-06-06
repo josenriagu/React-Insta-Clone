@@ -15,6 +15,7 @@ const PostContainer = ({ searchString, postData, postIcons, addComment, addLike,
                             thumbnailUrl={user.thumbnailUrl}
                             imageUrl={user.imageUrl}
                             likes={user.likes}
+                            likeStatus={user.likeStatus}
                             timestamp={user.timestamp}
                             comments={user.comments}
                             postIcons={postIcons}
