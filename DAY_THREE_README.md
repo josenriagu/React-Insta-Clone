@@ -74,4 +74,4 @@ const withAuthenticate = App =>
   - Once you feel like you've got a good grasp of this concept, go ahead and start converting your components into styled-components.
   - Try and make this thing as beautiful as possible
 
-- Deploy your Instagram clone to netlify and share it in the #show-it-off channel.
+[X] Deploy your Instagram clone to netlify and share it in the #show-it-off channel.
