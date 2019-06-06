@@ -26,9 +26,14 @@ export default class App extends Component {
     await this.setState({
       ...this.state, postData: this.state.postData.map(post => {
         if (postId === post.id) {
-          return {
-            ...post, likes: post.likes + 1
+          if (post.likeStatus === false) {
+            return {
+              ...post, likes: post.likes + 1, likeStatus: !post.likeStatus
+            }
           }
+          return {
+            ...post, likes: post.likes - 1, likeStatus: !post.likeStatus
+          };
         }
         return post;
       })
