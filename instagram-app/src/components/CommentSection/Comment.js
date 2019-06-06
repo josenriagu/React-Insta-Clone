@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { CommentDiv, DeleteButton, DeleteButtonImage } from '../Styles/CommentSectionStyles';
-import './CommentSection.css';
 
 export default class Comment extends Component {
     deleteHandler = event => {

@@ -1,6 +1,5 @@
 import React from 'react';
 import { AddCommentForm, AddCommentInput, PostBtnDiv } from '../Styles/CommentSectionStyles';
-import './CommentSection.css';
 
 const AddComment = ({ changeHandler, submitHandler, commentText }) => {
     return (
