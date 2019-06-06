@@ -1,26 +1,25 @@
 import React from 'react';
-import './SearchBar.css';
+import { IconDiv } from '../Styles/SearchBarStyles';
 
 const likedSrc = "/img/icons/like_alt.png";
 
 const Icons = ({ id, likeStatus, src, name, updateLike }) => {
     if (name === "like") {
         return (
-            <div
+            <IconDiv
                 id={id}
-                className="icon"
                 onClick={(event) => updateLike(event)}
             >
                 <img src={likeStatus ? likedSrc : src} alt="icon" />
-            </div>)
+            </IconDiv>
+        );
     }
     return (
-        <div
-            id={id}            
-            className="icon"
+        <IconDiv
+            id={id}
         >
             <img src={src} alt="icon" />
-        </div>
+        </IconDiv>
     );
 }
 

@@ -1,10 +1,10 @@
 import React from 'react';
+import { PostContainerDiv } from '../Styles/PostContainerStyles';
 import Post from './Post';
-import './PostContainer.css';
 
 const PostContainer = ({ searchString, postData, postIcons, addComment, addLike, deleteComment }) => {
     return (
-        <article className="post-container">
+        <PostContainerDiv>
             {
                 postData.filter(user => user.username.includes(searchString)).map(user => {
                     return (
@@ -23,10 +23,10 @@ const PostContainer = ({ searchString, postData, postIcons, addComment, addLike,
                             addLike={addLike}
                             deleteComment={deleteComment}
                         />
-                    )
+                    );
                 })
             }
-        </article>
+        </PostContainerDiv>
     );
 }
 

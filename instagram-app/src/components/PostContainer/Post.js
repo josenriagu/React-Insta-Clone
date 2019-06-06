@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { PostDiv, PostHeadDiv, LeftDiv, RightDiv, ProfileThumbnailDiv, ProfileThumbnail, ProfileDetailsDiv, PostImageDiv, PostBodyDiv, PostInteractionDiv } from '../Styles/PostContainerStyles';
+import { IconsDiv } from '../Styles/SearchBarStyles';
 import Icons from '../SearchBar/Icons';
 import CommentSection from '../CommentSection/CommentSection';
-import './PostContainer.css';
 
 export default class Post extends Component {
     updateLike = () => {
@@ -10,22 +11,22 @@ export default class Post extends Component {
     render() {
         const { id, username, likes, likeStatus, timestamp, comments, thumbnailUrl, imageUrl, postIcons, addComment, deleteComment } = this.props
         return (
-            <div id={id} className="post">
-                <div className="post-head">
-                    <div className="left">
-                        <div className="profile-thumbnail small">
-                            <img src={thumbnailUrl} alt="profile thumbnail" />
-                        </div>
-                        <div className="profile-details username"><strong>{username}</strong></div>
-                    </div>
-                    <div className="right"><strong>∙ ∙ ∙</strong></div>
-                </div>
-                <div className="post-image">
+            <PostDiv id={id}>
+                <PostHeadDiv>
+                    <LeftDiv>
+                        <ProfileThumbnailDiv small>
+                            <ProfileThumbnail src={thumbnailUrl} alt="profile thumbnail" />
+                        </ProfileThumbnailDiv>
+                        <ProfileDetailsDiv username><strong>{username}</strong></ProfileDetailsDiv>
+                    </LeftDiv>
+                    <RightDiv><strong>∙ ∙ ∙</strong></RightDiv>
+                </PostHeadDiv>
+                <PostImageDiv>
                     <img src={imageUrl} alt="post" />
-                </div>
-                <div className="post-body">
-                    <div className="post-interaction">
-                        <div className="icons">
+                </PostImageDiv>
+                <PostBodyDiv>
+                    <PostInteractionDiv>
+                        <IconsDiv>
                             {
                                 postIcons.map(icon => {
                                     return (
@@ -40,10 +41,10 @@ export default class Post extends Component {
                                     );
                                 })
                             }
-                        </div>
+                        </IconsDiv>
                         <p><strong>{likes} likes</strong></p>
-                    </div>
-                </div>
+                    </PostInteractionDiv>
+                </PostBodyDiv>
                 <CommentSection
                     id={id}
                     comments={comments}
@@ -51,7 +52,7 @@ export default class Post extends Component {
                     addComment={addComment}
                     deleteComment={deleteComment}
                 />
-            </div>
+            </PostDiv>
         );
     }
 }

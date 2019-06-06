@@ -1,17 +1,18 @@
 import React from 'react';
+import { AddCommentForm, AddCommentInput, PostBtnDiv } from '../Styles/CommentSectionStyles';
 import './CommentSection.css';
 
 const AddComment = ({ changeHandler, submitHandler, commentText }) => {
     return (
-        <form className="add-comment" onSubmit={(event) => submitHandler(event)}>
-            <input
+        <AddCommentForm onSubmit={(event) => submitHandler(event)}>
+            <AddCommentInput
                 type="text"
                 placeholder="Add a comment..."
                 value={commentText}
                 onChange={(event) => changeHandler(event)}
             />
-            <div className="post-btn" onClick={(event) => submitHandler(event)} >Post</div>
-        </form>
+            <PostBtnDiv onClick={(event) => submitHandler(event)} >Post</PostBtnDiv>
+        </AddCommentForm>
     );
 }
 

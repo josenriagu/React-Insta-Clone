@@ -1,17 +1,18 @@
 import React from 'react';
+import { PostsPageDiv, Main } from '../Styles/PostContainerStyles';
 import SearchBar from '../SearchBar/SearchBar';
 import PostContainer from './PostContainer';
 import ProfileSection from '../ProfileSection/ProfileSection';
 
-const PostsPage = ({value, changeHandler, searchIcons, searchString, postData, postIcons, addComment, addLike, deleteComment }) => {
+const PostsPage = ({ value, changeHandler, searchIcons, searchString, postData, postIcons, addComment, addLike, deleteComment }) => {
     return (
-        <div className="posts-page">
+        <PostsPageDiv>
             <SearchBar
                 value={value}
                 changeHandler={changeHandler}
                 searchIcons={searchIcons}
             />
-            <main className="main">
+            <Main>
                 <PostContainer
                     searchString={searchString}
                     postData={postData}
@@ -21,8 +22,8 @@ const PostsPage = ({value, changeHandler, searchIcons, searchString, postData, p
                     deleteComment={deleteComment}
                 />
                 <ProfileSection />
-            </main> 
-        </div>
+            </Main>
+        </PostsPageDiv>
     );
 }
 

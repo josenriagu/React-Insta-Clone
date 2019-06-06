@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import moment from 'moment';
+import { CommentSectionDiv, PostTimeDiv, PostFooterDiv } from '../Styles/CommentSectionStyles';
 import Comment from './Comment';
 import AddComment from '../CommentSection/AddComment';
-import './CommentSection.css';
 
 export default class CommentSection extends Component {
     constructor(props) {
@@ -19,8 +19,10 @@ export default class CommentSection extends Component {
 
     submitHandler = event => {
         event.preventDefault();
-        this.props.addComment(this.props.id, this.state.commentText)
-        this.setState({ ...this.state, commentText: "" })
+        if (this.state.commentText.length !== 0) {
+            this.props.addComment(this.props.id, this.state.commentText)
+            this.setState({ ...this.state, commentText: "" })
+        }
     }
 
     render() {
@@ -30,7 +32,7 @@ export default class CommentSection extends Component {
         // let dtt =moment().startOf(timestamp).fromNow();
         let new_timestamp = moment(timestamp, "MMMM Do YYYY, h:mm:ss a").fromNow();
         return (
-            <div id={id} className="comment-section">
+            <CommentSectionDiv id={id}>
                 {
                     comments.map(comment => {
                         return (
@@ -45,15 +47,15 @@ export default class CommentSection extends Component {
                         );
                     })
                 }
-                <div className="post-time">{new_timestamp}</div>
-                <div className="post-footer">
+                <PostTimeDiv>{new_timestamp}</PostTimeDiv>
+                <PostFooterDiv>
                     <AddComment
                         changeHandler={this.changeHandler}
                         submitHandler={this.submitHandler}
                         commentText={this.state.commentText}
                     />
-                </div>
-            </div>
+                </PostFooterDiv>
+            </CommentSectionDiv>
 
         );
     }

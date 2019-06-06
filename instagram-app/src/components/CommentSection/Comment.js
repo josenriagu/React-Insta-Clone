@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { CommentDiv, DeleteButton, DeleteButtonImage } from '../Styles/CommentSectionStyles';
 import './CommentSection.css';
 
 export default class Comment extends Component {
@@ -8,11 +9,14 @@ export default class Comment extends Component {
     }
     render() {
         const { id, username, text } = this.props;
+        const style = { display: (username === JSON.parse(localStorage.getItem("username"))) ? "initial" : "none" }
         return (
-            <div id={id} className="comment">
+            <CommentDiv id={id}>
                 <p><strong>{username} </strong>{text}</p>
-                <button onClick={event => this.deleteHandler(event)}>x</button>
-            </div>
+                <DeleteButton style={style} onClick={event => this.deleteHandler(event)}>
+                    <DeleteButtonImage src="/img/icons/delete.png" alt="delete" />
+                </DeleteButton>
+            </CommentDiv>
         );
     }
 }
