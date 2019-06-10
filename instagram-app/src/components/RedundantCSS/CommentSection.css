@@ -1,0 +1,42 @@
+/* .comment {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: 0 0.8rem;
+} */
+/* .comment button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0rem;
+  color: rgba(255, 0, 0, .3);
+} */
+/* .comment button:hover {
+  color: rgba(255, 0, 0, 1);
+} */
+/* .post-time {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #aaaaaa;
+  padding: 0 0.8rem;
+  margin-bottom: 0.35rem;
+} */
+/* .post-footer {
+  padding: 1rem 0.8rem;
+  border-top: 0.05rem solid #dbdbdb;
+} */
+/* .add-comment {
+  display: flex;
+}
+.add-comment input {
+  width: 100%;
+  padding: 0.3rem 0rem;
+  font-size: 0.9rem;
+  text-align: left;
+  border: 0;
+} */
+/* .post-btn {
+  padding: 0rem 0.5rem;
+  color: #d5e9fc;
+  cursor: pointer;
+} */

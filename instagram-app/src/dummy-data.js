@@ -1,10 +1,17 @@
+import uuid from 'uuid';
+
+export const searchIcons = [{ id: uuid(), name: "explore", src: "/img/icons/explore.png" }, { id: uuid(), name: "likepage", src: "/img/icons/like.png" }, { id: uuid(), name: "like", src: "/img/icons/user.png" }];
+
+export const postIcons = [{ id: uuid(), name: "like", src: "/img/icons/like.png" }, { id: uuid(), name: "chat", src: "/img/icons/chat.png" }, { id: uuid(), name: "share", src: "/img/icons/share.png" }];
+
 const dummyData = [
     {
         id: "a",
         username: "philzcoffee",
-        thumbnailUrl: 'https://instagram.fbna1-1.fna.fbcdn.net/vp/31c45306e6ca815b8c59940aed10cedc/5B2D3C88/t51.2885-19/11201517_887808411287357_1307163552_a.jpg',
-        imageUrl: 'https://instagram.fbna1-1.fna.fbcdn.net/vp/557a29d3526bc7f813c2a784d82de7d3/5B4E3E05/t51.2885-15/e35/26065916_2007800899433580_5879937492399947776_n.jpg',
+        thumbnailUrl: "https://tk-assets.lambdaschool.com/ecd33d34-c124-4b75-92d2-e5c52c171ed8_11201517_887808411287357_1307163552_a.jpg",
+        imageUrl: "https://tk-assets.lambdaschool.com/69cf901b-f96d-466e-a745-ff2a01effac9_philz-image.jpg",
         likes: 400,
+        likeStatus: false,
         timestamp: "July 17th 2017, 12:42:40 pm",
         comments: [
             {
@@ -27,9 +34,10 @@ const dummyData = [
     {
         id: "b",
         username: "twitch",
-        thumbnailUrl: 'https://instagram.fbna1-1.fna.fbcdn.net/vp/81f608ddb76a034e06c0d1669e7e2b48/5B35C840/t51.2885-19/10684037_1512272482349821_444823433_a.jpg',
-        imageUrl: 'https://instagram.fbna1-1.fna.fbcdn.net/vp/830c01ad7ceb325547fd1d4d1a1e6897/5B465520/t51.2885-15/e35/25006313_192089151354555_3374696275667582976_n.jpg',
+        thumbnailUrl: "https://tk-assets.lambdaschool.com/ce601fdf-7cb0-4098-83d3-1a1584a72513_30841289_342445456281079_112845064497004544_n.jpg",
+        imageUrl: "https://tk-assets.lambdaschool.com/89d13918-b7a2-4b40-9658-f376ea3f6b59_37131538_213683546146400_1083714364399157248_n.jpg",
         likes: 4307,
+        likeStatus: false,
         timestamp: "July 15th 2017, 03:12:09 pm",
         comments: [
             {
@@ -62,9 +70,10 @@ const dummyData = [
     {
         id: "c",
         username: "playhearthstone",
-        thumbnailUrl: 'https://instagram.fbna1-1.fna.fbcdn.net/vp/51d5b37438ae3a47df37b7ed3fda141f/5B4ABAA7/t51.2885-19/s150x150/13398400_140638743023210_310840336_a.jpg',
-        imageUrl: 'https://instagram.fbna1-1.fna.fbcdn.net/vp/22618be7ee2a2b676d13e8d70d7d5e08/5B40BF6B/t51.2885-15/e35/25038917_1978298569058775_6081161469041311744_n.jpg',
+        thumbnailUrl: "https://tk-assets.lambdaschool.com/c432f179-8bd7-4758-959d-d88a21f96bca_37105899_432228420518610_5035444036064772096_n.jpg",
+        imageUrl: "https://tk-assets.lambdaschool.com/43bf01f9-319c-469d-8cf5-0120fe1007f1_yosemite.jpg",
         likes: 5306,
+        likeStatus: false,
         timestamp: "July 14th 2017, 10:04:08 am",
         comments: [
             {

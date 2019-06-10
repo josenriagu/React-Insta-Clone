@@ -1,0 +1,71 @@
+/* .post-container {
+  width: 65%;
+} */
+/* .profile-section {
+  width: calc(33% - 1rem);
+  padding: 0.5rem;
+} */
+/* .post {
+  margin-bottom: 4rem;
+  border-radius: 0.3rem;
+  border: 0.05rem solid #dbdbdb;
+  background-color: white;
+} */
+/* .post-head {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+} */
+/* .left,
+.right {
+  display: flex;
+  align-items: center;
+} */
+/* .profile-thumbnail {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+} */
+/* .small {
+  width: 2.3rem;
+  height: 2.3rem;
+  border: 0.1rem solid purple;
+} */
+/* .profile-thumbnail img {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+} */
+/* .profile-details {
+  padding-left: 1rem;
+  text-align: left;
+  cursor: pointer;
+} */
+/* .name {
+  font-size: 0.75rem;
+  color: #aaaaaa;
+} */
+/* .post-image {
+  width: 100%;
+} */
+/* .post-body {
+  padding: 0.5rem 0.8rem;
+  padding-bottom: 0rem;
+} */
+/* .post-interaction {
+  width: 20%;
+  text-align: left;
+}
+.post-interaction .icons {
+  width: 80%;
+} */
