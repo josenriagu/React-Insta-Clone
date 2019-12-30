@@ -10,7 +10,7 @@ const ProfileSection = props => {
                     {
                         (username === "thedrflynn")
                             ?
-                            <ProfileThumbnail src="https://scontent-los2-1.cdninstagram.com/vp/69f1ccde7a7e4a26e051822e0f230774/5D9D491E/t51.2885-19/s150x150/56358356_232738404265808_6854026862427897856_n.jpg?_nc_ht=scontent-los2-1.cdninstagram.com" alt="your profile thumbnail" />
+                            <ProfileThumbnail src="https://scontent-los2-1.cdninstagram.com/v/t51.2885-19/s150x150/73235817_1135752526630248_208376832355991552_n.jpg?_nc_ht=scontent-los2-1.cdninstagram.com&_nc_ohc=ljpnaPwGyHIAX-qNWul&oh=311665ee27b132c93edf584d7bdd1c48&oe=5E8E165C" alt="your profile thumbnail" />
                             :
                             <ProfileThumbnail src="/img/icons/placeholder.jpg" alt="user profile thumbnail" />
                     }
