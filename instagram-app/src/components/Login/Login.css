@@ -6,6 +6,7 @@ img {
   display: flex;
   flex-direction: column;
   margin: 1rem auto 0 auto;
+  font-weight: 600;
   padding: 1rem 2.2rem 3rem 2.2rem;
   background-color: white;
   border: 0.05rem solid #dbdbdb;
@@ -26,7 +27,6 @@ img {
   border-radius: 0.2rem;
   font-weight: 600;
   color: white;
-  background-color: #76abdf;
   cursor: pointer;
 }
 .field {
@@ -50,7 +50,7 @@ img {
   width: fit-content;
   text-align: right;
   margin: 1rem 0 1.5rem auto;
-  color: #0d0d70;
+  color: #3897f0;
   cursor: pointer;
 }
 .separator {
@@ -73,7 +73,7 @@ img {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  color: #30306d;
+  color: #3897f0;
 }
 .fb-logo {
   display: flex;
