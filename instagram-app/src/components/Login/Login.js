@@ -5,8 +5,7 @@ export default class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            username: "",
-            password: ""
+            username: ""
         }
     }
     changeHandler = event => {
@@ -17,6 +16,7 @@ export default class Login extends Component {
         window.location.reload();
     }
     render() {
+        let btnStyle = { backgroundColor: (this.state.username.length !== 0) ? '#3897f0' : '#76abdf' };
         return (
             <div className="login">
                 <div className="login-image">
@@ -31,6 +31,7 @@ export default class Login extends Component {
                             type="text"
                             onChange={(event) => this.changeHandler(event)}
                             placeholder="Phone number, username, or email"
+                            autoComplete="on"
                             required
                         />
                     </div>
@@ -38,11 +39,13 @@ export default class Login extends Component {
                         <input
                             type="password"
                             placeholder="Password"
+                            autoComplete="on"
                             required
                         />
                     </div>
                     <p>Forgot password?</p>
                     <button
+                        style={btnStyle}
                         type="submit">Log In</button>
                 </form>
                 <div className="separator">
